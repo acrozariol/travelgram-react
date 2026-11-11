@@ -21,7 +21,7 @@ function Navbar() {
         </li>
 
         <li>
-          <a href="#">Minhas viagens</a>
+          <a href="#">My travels</a>
         </li>
 
         <li>

@@ -1,15 +1,15 @@
 # Travelgram ✈️
 
-A simple travel profile page developed with React, showcasing personal information and a gallery of travel photos.
+A simple travel profile page built with React, featuring a personal profile, travel photo gallery, and like buttons for each photo.
 
 ## Technologies
 
 - React
 - JavaScript
-- CSS3
+- CSS
 - Vite
 
-## How to Run
+## Run Locally
 
 ```bash
 npm install

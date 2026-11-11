@@ -12,14 +12,14 @@ function Header() {
           <img src={profilePic} alt="Imagem de Isabela Torres" />
 
           <div>
-            <h1>Isabela Torres</h1>
+            <h1>Mandy</h1>
 
             <p>
-              Amante de viagens, cultura e gastronomia. 🌍✈️
+              Travel lover with a passion for culture and gastronomy. 🌍✈️
               <br />
-              Aqui compartilho as histórias registradas em cada clique,
-              explorando cantinhos fascinantes do nosso planeta a partir da
-              movimentada cidade de São Paulo. 🏙️📸
+              Here, I share the stories behind every snapshot, exploring
+              fascinating corners of our planet, one adventure at a time, from
+              the vibrant city of Toronto 🇨🇦📸
             </p>
           </div>
         </div>
@@ -27,17 +27,17 @@ function Header() {
         <ul id="info">
           <li>
             <img src={mapPin} alt="Ícone de mapa" />
-            <span>São Paulo, Brazil</span>
+            <span>Toronto, Canada</span>
           </li>
 
           <li>
             <img src={airplaneTilt} alt="Ícone de avião" />
-            <span>37 países</span>
+            <span>37 countries</span>
           </li>
 
           <li>
             <img src={imageIcon} alt="Ícone de imagem" />
-            <span>240 fotos</span>
+            <span>240 pictures</span>
           </li>
         </ul>
       </div>

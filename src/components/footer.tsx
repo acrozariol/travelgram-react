@@ -1,11 +1,11 @@
 function Footer() {
   return (
     <footer className="container">
-      <span>Travelgram &copy; 2024</span>
+      <span>Travelgram &copy; 2026</span>
 
-      <span>Termos de uso</span>
+      <span>Terms of Use</span>
 
-      <span>Política de privacidade</span>
+      <span>Privacy Policy</span>
     </footer>
   );
 }

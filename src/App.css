@@ -87,6 +87,56 @@ main img {
   object-fit: cover;
 }
 
+/* EFEITO NAS FOTOS */
+
+.gallery img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+/* IMAGEM AMPLIADA */
+
+.modal img {
+  max-width: 85%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* BOTÃO FECHAR */
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
 /* FOOTER */
 
 footer {
@@ -98,4 +148,165 @@ footer {
 
 footer span:first-child {
   margin-right: auto;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLETS */
+@media (max-width: 900px) {
+  /* Header */
+  header .container {
+    gap: 24px;
+  }
+
+  #profile {
+    gap: 20px;
+  }
+
+  #profile img {
+    width: 140px;
+    height: 140px;
+  }
+
+  #info {
+    width: 220px;
+  }
+
+  /* Gallery */
+  /* Gallery - Mobile */
+
+  main.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .photo {
+    width: 100%;
+    max-width: 286px;
+    height: 286px;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+  /* Navbar */
+  nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  nav ul {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* Header */
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #profile img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #profile > div {
+    max-width: 100%;
+  }
+
+  #info {
+    width: 100%;
+    gap: 12px;
+  }
+
+  /* Gallery */
+  main.gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Footer */
+  footer {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer span:first-child {
+    width: 100%;
+  }
+}
+
+/* FOTOS E BOTÃO DE CURTIR */
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  display: block;
+}
+
+.photo button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+
+  border: none;
+  background: white;
+  border-radius: 50%;
+
+  width: 36px;
+  height: 36px;
+
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* GALLERY */
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BOTÃO DE CURTIR */
+
+.photo button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+main.gallery {
+  justify-content: center;
+}
+
+.photo {
+  width: 100%;
+  max-width: 286px;
+  height: 286px;
 }
